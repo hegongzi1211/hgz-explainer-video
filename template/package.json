@@ -1,0 +1,32 @@
+{
+  "name": "hgz-explainer-video",
+  "version": "1.0.0",
+  "description": "Independent Remotion template — explainer style: top title + avatar window + content card + waveform subtitle.",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.486",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.486"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.486",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render src/index.ts ExplainerVideo out/explainer-template.mp4",
+    "render:preview": "remotion render src/index.ts ExplainerVideo out/preview-5s.mp4 --frames=0-149",
+    "render:scene1": "remotion render src/index.ts ExplainerVideo out/scene1-pyramid.mp4 --frames=90-269",
+    "still:cover": "remotion still src/index.ts ExplainerVideo out/cover.png --frame=100",
+    "lint": "tsc --noEmit"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

@@ -1,0 +1,15 @@
+# 依赖（学员自己 npm install）
+node_modules/
+
+# 构建/渲染产物
+build/
+out/
+public/*.wav
+public/narration.wav
+
+# 本地配置（含 TTS 凭证，绝不入库）
+config.json
+
+# 日志 / 系统文件
+*.log
+.DS_Store
